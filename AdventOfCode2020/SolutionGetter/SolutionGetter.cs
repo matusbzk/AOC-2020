@@ -14,7 +14,7 @@ namespace SolutionGetter
         {
             return day switch
             {
-                1 => (ISolution) new Day01.Solution(),
+                1 => new Day01.Solution(),
                 2 => new Day02.Solution(),
                 3 => new Day03.Solution(),
                 4 => new Day04.Solution(),
