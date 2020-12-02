@@ -6,16 +6,23 @@ namespace Day01
     /// <inheritdoc />
     public class Solution : ISolution
     {
+        public ExpenseCalculator ExpenseCalculator;
+
+        public void LoadInput()
+        {
+            ExpenseCalculator = new ExpenseCalculator(InputGetter.ReadInputLinesInt(1));
+        }
+
         /// <inheritdoc />
         public object Part1()
         {
-            throw new NotImplementedException();
+            return ExpenseCalculator.MultiplyNWithSum(2020);
         }
 
         /// <inheritdoc />
         public object Part2()
         {
-            throw new NotImplementedException();
+            return ExpenseCalculator.MultiplyNWithSum(2020, 3);
         }
     }
 }

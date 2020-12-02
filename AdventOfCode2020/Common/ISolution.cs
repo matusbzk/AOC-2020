@@ -6,6 +6,11 @@
     public interface ISolution
     {
         /// <summary>
+        /// Loads input
+        /// </summary>
+        void LoadInput() { }
+
+        /// <summary>
         /// Solution to first part of problem
         /// </summary>
         object Part1();

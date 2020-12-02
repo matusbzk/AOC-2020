@@ -15,6 +15,7 @@ namespace SolutionGetter
             }
 
             Solution = SolutionGetter.GetSolution(day);
+            Solution.LoadInput();
         }
 
         public void PrintSolution()
